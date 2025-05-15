@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "private": true,
-    "homepage": " https://garegin1991.github.io/reactmy/",
+  "homepage": " https://garegin1991.github.io/reactmy",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
