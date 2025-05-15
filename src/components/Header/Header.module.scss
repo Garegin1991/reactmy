@@ -1,0 +1,52 @@
+header {
+  background-color: #74C69D;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 38px;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 125%;
+  color: #FFFFFF;
+}
+
+.logo:hover {
+  color: #212529;
+}
+
+.container {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  a {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+    text-align: right;
+  }
+
+  a:hover {
+    color: #212529;
+  }
+}
