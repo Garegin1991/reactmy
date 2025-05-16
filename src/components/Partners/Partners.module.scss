@@ -1,130 +1,133 @@
 .partners {
+  text-align: center;
+  padding: 60px 0;
+
+  button {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    padding: 11px 48px;
     text-align: center;
-    padding: 60px 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #212529;
+  }
 
-    button {
-        font-family: Work Sans;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 125%;
-        padding: 11px 48px;
-        text-align: center;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: #212529;
+  button:hover {
+    background-color: #74C69D;
+    color: #fff;
+
+  }
+
+  h5 {
+    font-family: Work Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #74C69D;
+  }
+
+  h2 {
+
+    margin: 10px 0;
+    font-family: Crimson Text;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    text-align: center;
+
+  }
+
+  p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 55px 0;
+
+    img {
+      height: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    button:hover {
-        background-color: #74C69D;
-        color: #fff;
+    img:hover {
+
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px #74c69def;
+      border-radius: 5px;
+      cursor: pointer;
 
     }
+  }
 
-    h5 {
-        font-family: Work Sans;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: 5px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #74C69D;
-    }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 73px;
+  }
 
-    h2 {
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 110px;
 
-        margin: 10px 0;
+    .desc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      justify-content: space-between;
+      gap: 16px;
+
+      h3 {
         font-family: Crimson Text;
         font-weight: 700;
         font-size: 40px;
         line-height: 125%;
-        letter-spacing: 0px;
-        text-align: center;
 
-    }
+      }
 
-    p {
+      p {
+        text-align: left;
         font-family: Work Sans;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 125%;
-        text-align: center;
 
+        color: #21252980;
+      }
     }
-
-    .logos {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        margin: 55px 0;
-
-        img {
-            height: 30px;
-
-        }
-
-        img:hover {
-            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;
-            cursor: pointer;
-
-        }
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 40px;
-        gap: 73px;
-    }
-
-    .card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 40px;
-        gap: 110px;
-
-        .desc {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-            justify-content: space-between;
-            gap: 16px;
-
-            h3 {
-                font-family: Crimson Text;
-                font-weight: 700;
-                font-size: 40px;
-                line-height: 125%;
-
-            }
-
-            p {
-                text-align: left;
-                font-family: Work Sans;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 125%;
-
-                color: #21252980;
-            }
-        }
-    }
+  }
 
 }
 
 
 
 .container {
-    width: 1280px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
 }
+
 /* Հեռախոսներ */
 @media (max-width: 480px) {
   .partners {
@@ -207,9 +210,11 @@
     .card {
       flex-direction: column;
       gap: 50px;
-  img{
+
+      img {
         width: 80%;
-    }
+      }
+
       .desc {
         align-items: center;
         text-align: center;
@@ -244,7 +249,7 @@
     }
 
     .card {
-        display: block;
+      display: block;
       gap: 80px;
 
       .desc {
