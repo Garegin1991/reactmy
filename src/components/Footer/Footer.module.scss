@@ -1,12 +1,13 @@
 footer {
     margin-top: 54px;
     background-color: #74C69D;
-div{
-    padding: 51px 0 49px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
+    div {
+        padding: 51px 0 49px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .footbar {
         display: flex;
@@ -14,6 +15,7 @@ div{
         align-items: center;
         gap: 20px;
     }
+    
 
     p {
         font-family: Work Sans;
@@ -30,4 +32,88 @@ div{
     width: 1280px;
     max-width: 100%;
     margin: 0 auto;
+}
+
+/* Հեռախոսներ */
+@media (max-width: 480px) {
+    footer div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    // footer .footbar {
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     gap: 15px;
+    // }
+
+    footer p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* Փոքր պլանշետներ */
+@media (max-width: 768px) {
+    footer div {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 40px 0;
+    }
+
+  
+
+    footer p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* Միջին դեսքթոփներ */
+@media (min-width: 769px) and (max-width: 1279px) {
+    footer div {
+        padding: 45px 0;
+    }
+
+    footer .footbar {
+        gap: 18px;
+    }
+
+    footer p {
+        font-size: 19px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* Մեծ դեսքթոփներ */
+@media (min-width: 1280px) {
+    footer div {
+        padding: 51px 0 49px 0;
+    }
+
+    footer .footbar {
+        gap: 20px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 1280px;
+    }
 }

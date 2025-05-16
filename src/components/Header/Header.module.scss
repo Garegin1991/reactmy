@@ -49,4 +49,154 @@ header {
   a:hover {
     color: #212529;
   }
+
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.menu_block {
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  background-color: #74c69de3;
+  transition: 0.3s;
+  text-align: right;
+
+  .navbar_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    position: absolute;
+  
+    top: 130px;
+
+    a {
+      font-family: Work Sans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 125%;
+      color: #FFFFFF;
+      text-align: right;
+
+    }
+
+    a:hover {
+      color: #212529;
+    }
+  }
+}
+
+.mobile_menu{
+  display: none;
+}
+/* Հեռախոսներ (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 28px; /* Փոքրացնել լոգոյի տառաչափը */
+  }
+
+  .navbar {
+    display: none; /* Հեռացնել navbar-ն մեծ էկրանների համար */
+  }
+
+  .mobile_menu {
+    display: block; /* Ցուցադրել մոբայլ մենյուի կոճակը */
+  }
+
+  .menu_block {
+    width: 80%;
+  }
+}
+
+/* Փոքր պլանշետներ (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .menu_block {
+    width: 70%;
+  }
+}
+
+/* Միջին դեսքթոփներ (769px - 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .container {
+    width: 95%;
+    padding: 0 30px;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+
+  .navbar {
+    gap: 25px;
+    a {
+      font-size: 19px;
+    }
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  .menu_block {
+    width: 40%;
+  }
+}
+
+/* Մեծ դեսքթոփներ (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .navbar {
+    gap: 30px;
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  .menu_block {
+    width: 30%;
+  }
 }

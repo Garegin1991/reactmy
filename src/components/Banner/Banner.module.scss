@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // justify-content: space-between;
     gap: 15px;
 
     h6 {
@@ -65,4 +64,145 @@
     max-width: 100%;
     margin: 0 auto;
     gap: 120px;
+}
+/* Հեռախոսներ */
+@media (max-width: 480px) {
+  .banner {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .left h6 {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .left p {
+    font-size: 13px;
+  }
+
+  .left .btn {
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+}
+
+/* Փոքր պլանշետներ */
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .left h6 {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .left h2 {
+    font-size: 32px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .left .btn {
+    font-size: 18px;
+    padding: 10px 36px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 60px;
+    width: 95%;
+    margin: 0 auto;
+    align-items: flex-start;
+    img{
+        width: 80%;
+    }
+  }
+}
+
+/* Միջին դեսքթոփներ */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .banner {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .left h6 {
+    font-size: 15px;
+    letter-spacing: 4.5px;
+  }
+
+  .left h2 {
+    font-size: 36px;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .left .btn {
+    font-size: 19px;
+    padding: 10px 42px;
+  }
+
+  .container {
+    // flex-direction: column;
+    gap: 80px;
+    width: 95%;
+    margin: 0 auto;
+    align-items: flex-start;
+    img{
+        width: 60%;
+    }
+  }
+}
+
+/* Մեծ դեսքթոփներ */
+@media (min-width: 1280px) {
+  .banner {
+    padding-top: 40px;
+    padding-bottom: 82px;
+  }
+
+  .left h6 {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+
+  .left h2 {
+    font-size: 40px;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .left .btn {
+    font-size: 20px;
+    padding: 11px 48px;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 120px;
+    width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+  }
 }
