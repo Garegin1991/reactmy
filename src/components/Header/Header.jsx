@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     const [menuState, setMenuState] = useState(false)
     return <header >
-        <div className={styles.container}>
+        <div className={`container ${styles.content}`}>
             <Link to="/" className={styles.logo}>
                 <img src={logo} alt="Logo" />Start
             </Link>
@@ -22,10 +22,10 @@ function Header() {
                 </button>
                 <div style={{ right: menuState ? '0' : "-100%" }} className={styles.menu_block}>
                     <nav className={styles.navbar_mobile}>
-                        <Link to="/">Home</Link>
-                        <Link to="/portfolio">Portfolio</Link>
-                        <Link to="/services">Services</Link>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/" onClick={() => setMenuState(false)}>Home</Link>
+                        <Link to="/portfolio" onClick={() => setMenuState(false)}>Portfolio</Link>
+                        <Link to="/services" onClick={() => setMenuState(false)}>Services</Link>
+                        <Link to="/contact" onClick={() => setMenuState(false)}>Contact</Link>
                     </nav>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,15 +7,21 @@
 // :root {
 
 // }
-button{
+button {
   cursor: pointer;
 }
 a {
-
   text-decoration: none;
 }
-.container{
+.container {
   width: 1280px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

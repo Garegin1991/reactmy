@@ -1,7 +1,7 @@
 header {
-  background-color: #74C69D;
+  background-color: #74c69d;
 
-  div {
+  .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@ header {
   font-weight: 500;
   font-size: 40px;
   line-height: 125%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .logo:hover {
@@ -42,14 +42,13 @@ header {
     font-weight: 400;
     font-size: 20px;
     line-height: 125%;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: right;
   }
 
   a:hover {
     color: #212529;
   }
-
 }
 
 .btn {
@@ -66,7 +65,8 @@ header {
   position: fixed;
   right: -100%;
   top: 0;
-  background-color: #74c69de3;
+  background-color: #74c69d;
+  padding: 100px;
   transition: 0.3s;
   text-align: right;
 
@@ -77,7 +77,7 @@ header {
     justify-content: space-between;
     gap: 30px;
     position: absolute;
-  
+
     top: 130px;
 
     a {
@@ -85,9 +85,8 @@ header {
       font-weight: 400;
       font-size: 20px;
       line-height: 125%;
-      color: #FFFFFF;
+      color: #ffffff;
       text-align: right;
-
     }
 
     a:hover {
@@ -96,7 +95,7 @@ header {
   }
 }
 
-.mobile_menu{
+.mobile_menu {
   display: none;
 }
 /* Հեռախոսներ (max-width: 480px) */
